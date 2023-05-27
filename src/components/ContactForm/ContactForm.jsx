@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import css from './ContactForm.module.css';
 
+import { MdOutlinePersonAdd } from 'react-icons/md';
+
 export default function ContactForm({ onSubmit }) {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
@@ -56,6 +58,7 @@ export default function ContactForm({ onSubmit }) {
       ></input>
 
       <button className={css.form_btn} type="submit">
+        <MdOutlinePersonAdd className={css.btn_icon} />
         Add contact
       </button>
     </form>

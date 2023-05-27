@@ -20,8 +20,9 @@
 }
 
 .form_btn {
-  display: block;
+  display: flex;
   margin: 0 auto;
+  align-items: center;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -34,4 +35,11 @@
 .form_btn:hover {
   background-color: #45a049;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn_icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  fill: black;
 }
